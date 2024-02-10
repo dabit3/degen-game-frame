@@ -1,5 +1,7 @@
 # Following Giveaway Frame
 
+See `.env.local.example` for environment variables.
+
 ### How it works
 
 1. User guesses a number
