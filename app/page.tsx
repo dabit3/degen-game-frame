@@ -7,17 +7,14 @@ const buttonText = 'Check your number'
 export default function Home() {
   return (
     <div>
+      <a href="https://nader.codes" target="_blank" rel="no-opener">
       <img
         src={image}
         width={400}
         height={400}
         alt='Hello world.'
       />
-     <div className='
-      md:w-[400px]
-      w-full mt-1 hover:bg-[#f1f1f1] transition rounded py-2 bg-white px-12 flex items-center w-[200px] justify-center'>
-        <p className='text-black'>{buttonText}</p>
-      </div>
+      </a>
     </div>
   );
 }
