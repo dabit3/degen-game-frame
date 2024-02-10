@@ -54,7 +54,7 @@ export async function POST(req) {
     return new NextResponse(_html(notFollowingImage))
   }
 
-  const isClaimed = await kv.get('claimed_20')
+  const isClaimed = await kv.get(process.env.GAME_KEY || '')
 
   if (isClaimed) {
     return new NextResponse(_html(alreadyClaimed))
@@ -62,7 +62,7 @@ export async function POST(req) {
   
   if (inputText === process.env.NUMBER) {
     image = winner
-    await kv.set("claimed_20", true)
+    await kv.set(process.env.GAME_KEY || '', true)
     const { request } = await publicClient.simulateContract({
       address: contractAddress,
       abi: ABI,
