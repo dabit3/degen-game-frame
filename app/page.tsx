@@ -5,7 +5,7 @@ const buttonText = 'Check your number'
 
 import { ENVIRONMENT } from '../constants'
 
-let URL = 'TBD'
+let URL = process.env.PROD_URL
 
 if (ENVIRONMENT === 'local') {
   URL = 'http://localhost:3001'
