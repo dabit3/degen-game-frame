@@ -1,10 +1,8 @@
 export const runtime = 'edge'
+import { URL } from '../constants'
 
 const image = "https://i.imgur.com/EF7kCQW.jpeg"
 const buttonText = 'Check your number'
-
-import { URL } from '../constants'
-console.log('URL', URL)
 
 export default function Home() {
   return (
@@ -30,10 +28,12 @@ export async function generateMetadata() {
     'fc:frame': 'vNext',
     'fc:frame:image': image,
     'fc:frame:image:aspect_ratio': '1:1',
-    'fc:frame:input:text': 'Number between 1 and 100000',
-    'fc:frame:button:1:target': `${URL}/check`,
+  
+    'fc:frame:post_url': `${URL}/check`,
     'fc:frame:button:1': buttonText,
     'fc:frame:button:1:action': 'post',
+
+    'fc:frame:input:text': 'Number between 1 and 100000',
   }
 
   return {
