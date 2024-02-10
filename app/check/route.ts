@@ -24,6 +24,7 @@ const _html = (img) => `
     <mega property="og:image" content="${img}" />
     <meta property="fc:frame" content="vNext" />
     <meta property="fc:frame:image" content="${img}" />
+    <meta property="fc:frame:image:aspect_ratio" content="1:1" />
   </head>
 </html>
 `
