@@ -4,6 +4,8 @@ import { followingQuery, walletQuery } from '../api'
 import { init, fetchQuery } from "@airstack/node";
 import { account, walletClient, publicClient } from './config' 
 import ABI from './abi.json'
+
+// USDC contract address on Base
 const contractAddress = "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
 
 init(process.env.AIRSTACK_KEY || '')
