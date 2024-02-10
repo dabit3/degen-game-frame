@@ -30,7 +30,7 @@ export async function generateMetadata() {
     'fc:frame:button:1': buttonText,
     'fc:frame:button:1:action': 'post',
 
-    'fc:frame:input:text': 'Number between 1 and 20000',
+    'fc:frame:input:text': 'Number between 1 and 1000',
   }
 
   return {
