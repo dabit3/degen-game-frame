@@ -1,4 +1,4 @@
-# Following Giveaway Frame
+# Degen Follower Giveaway Frame
 
 See `.env.local.example` for environment variables.
 
