@@ -23,7 +23,7 @@ const _html = (img) => `
 <html>
   <head>
     <title>Frame</title>
-    <mega property="og:image" content="${img}" />
+    <meta property="og:image" content="${img}" />
     <meta property="fc:frame" content="vNext" />
     <meta property="fc:frame:image" content="${img}" />
     <meta property="fc:frame:image:aspect_ratio" content="1:1" />
